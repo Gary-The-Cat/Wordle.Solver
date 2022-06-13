@@ -3,7 +3,7 @@
   <PropertyGroup>
 	<TargetFramework>net6.0-windows</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <BaseOutputPath>C:\GitHub\code\WordleSolver\Application</BaseOutputPath>
+    <BaseOutputPath>..\..\Application</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,7 +4,7 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <BaseOutputPath>C:\GitHub\code\WordleSolver\Application</BaseOutputPath>
+    <BaseOutputPath>..\..\Application</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
