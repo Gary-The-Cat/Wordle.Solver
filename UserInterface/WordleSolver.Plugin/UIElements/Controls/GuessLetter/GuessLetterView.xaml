@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="WordleSolver.Plugin.UIElements.Controls.GuessLetter.GuessLetterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WordleSolver.Plugin.UIElements.Controls.GuessLetter"
+             xmlns:converters="clr-namespace:Impulse.SharedFramework.Converters;assembly=Impulse.SharedFramework"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <converters:CaseConverter x:Key="CaseConverter"/>
+    </UserControl.Resources>
+    <Grid
+        Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBox
+            x:Name="me"
+            FontSize="80"
+            Foreground="White"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            CharacterCasing="Upper"
+            Text="{Binding FeedbackCharacter, Mode=TwoWay}"
+            Background="{Binding FeedbackSelectionViewModel.SelectedColour}"
+            GotFocus="TextBox_GotFocus"
+            KeyUp="TextBox_KeyUp"/>
+
+
+        <ContentControl
+            HorizontalAlignment="Stretch"
+            Grid.Row="1"
+            Margin="10"
+            x:Name="FeedbackSelectionViewModel"/>
+    </Grid>
+</UserControl>

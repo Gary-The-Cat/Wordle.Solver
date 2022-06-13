@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="UIElements\Controls\FeedbackSelectionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UIElements\Controls\GuessLetter\GuessLetterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UIElements\Screens\Solver\SolverInputTabView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UIElements\Controls\FeedbackSelectionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UIElements\Controls\GuessLetter\GuessLetterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UIElements\Screens\Solver\SolverInputTabView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

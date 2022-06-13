@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impulse.Shared", "..\Impulse.Dashboard\Impulse.Framework\Impulse.Shared\Impulse.Shared.csproj", "{1D680EA7-E853-45F3-9E6A-37A8735DEC96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Impulse.SharedFramework", "..\Impulse.Dashboard\Impulse.Framework\Impulse.SharedFramework\Impulse.SharedFramework.csproj", "{E6B6FF45-606D-4CC6-809D-5DA49CD1515B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{EE30B2BE-C334-490D-BED5-52828C027792}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7005D080-3CC5-4DA3-94CD-E8E57CB2C5F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInterface", "UserInterface", "{8ECD8DB5-429A-4608-8079-1A24FB509F0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordleSolver.Plugin", "UserInterface\WordleSolver.Plugin\WordleSolver.Plugin.csproj", "{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "WordleSolver.Domain", "Domain\WordleSolver.Domain\WordleSolver.Domain.fsproj", "{8E8867C9-BB55-4109-B311-6AC84785F442}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainTests", "DomainTests", "{EE497600-45A6-4DF1-9A82-D881FD926C08}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "LetterTests", "LetterTests\LetterTests.fsproj", "{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.Runner", "Dashboard.Runner\Dashboard.Runner.csproj", "{72095373-3981-4F1D-85FE-21BF516BA35C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D680EA7-E853-45F3-9E6A-37A8735DEC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D680EA7-E853-45F3-9E6A-37A8735DEC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D680EA7-E853-45F3-9E6A-37A8735DEC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D680EA7-E853-45F3-9E6A-37A8735DEC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B6FF45-606D-4CC6-809D-5DA49CD1515B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B6FF45-606D-4CC6-809D-5DA49CD1515B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B6FF45-606D-4CC6-809D-5DA49CD1515B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B6FF45-606D-4CC6-809D-5DA49CD1515B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8867C9-BB55-4109-B311-6AC84785F442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8867C9-BB55-4109-B311-6AC84785F442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8867C9-BB55-4109-B311-6AC84785F442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8867C9-BB55-4109-B311-6AC84785F442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72095373-3981-4F1D-85FE-21BF516BA35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72095373-3981-4F1D-85FE-21BF516BA35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72095373-3981-4F1D-85FE-21BF516BA35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72095373-3981-4F1D-85FE-21BF516BA35C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D680EA7-E853-45F3-9E6A-37A8735DEC96} = {EE30B2BE-C334-490D-BED5-52828C027792}
+		{E6B6FF45-606D-4CC6-809D-5DA49CD1515B} = {EE30B2BE-C334-490D-BED5-52828C027792}
+		{899A5577-7E73-47F7-8FC2-A0FD1C24BB7A} = {8ECD8DB5-429A-4608-8079-1A24FB509F0E}
+		{8E8867C9-BB55-4109-B311-6AC84785F442} = {7005D080-3CC5-4DA3-94CD-E8E57CB2C5F7}
+		{67C6AD39-94B4-4B4E-B4B2-0DA52FEFBC29} = {EE497600-45A6-4DF1-9A82-D881FD926C08}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {843A1BF6-2B47-4E11-8F94-3B613F7DB624}
+	EndGlobalSection
+EndGlobal

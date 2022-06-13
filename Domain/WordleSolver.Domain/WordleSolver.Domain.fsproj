@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net6.0-windows</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <BaseOutputPath>C:\GitHub\code\WordleSolver\Application</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types\WordleWord.fs" />
+    <Compile Include="Types\letter.fs" />
+    <Compile Include="Types\Feedback.fs" />
+    <Compile Include="Types\LetterPosition.fs" />
+    <Compile Include="Types\guessLetter.fs" />
+    <Compile Include="Types\Guess.fs" />
+    <Compile Include="Solver\Solver.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

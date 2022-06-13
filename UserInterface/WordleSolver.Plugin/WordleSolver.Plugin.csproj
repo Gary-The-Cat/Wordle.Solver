@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <BaseOutputPath>C:\GitHub\code\WordleSolver\Application</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview4" />
+	  <PackageReference Include="FSharp.Core" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Impulse.Dashboard\Impulse.Framework\Impulse.SharedFramework\Impulse.SharedFramework.csproj" />
+    <ProjectReference Include="..\..\..\Impulse.Dashboard\Impulse.Framework\Impulse.Shared\Impulse.Shared.csproj" />
+    <ProjectReference Include="..\..\Domain\WordleSolver.Domain\WordleSolver.Domain.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FSharpConversion\" />
+  </ItemGroup>
+
+</Project>
