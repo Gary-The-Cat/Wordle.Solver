@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="FSharpConversion\**" />
+    <EmbeddedResource Remove="FSharpConversion\**" />
+    <None Remove="FSharpConversion\**" />
+    <Page Remove="FSharpConversion\**" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview4" />
 	  <PackageReference Include="FSharp.Core" Version="6.0.0" />
   </ItemGroup>
@@ -16,10 +23,6 @@
     <ProjectReference Include="..\..\..\Impulse.Dashboard\Impulse.Framework\Impulse.SharedFramework\Impulse.SharedFramework.csproj" />
     <ProjectReference Include="..\..\..\Impulse.Dashboard\Impulse.Framework\Impulse.Shared\Impulse.Shared.csproj" />
     <ProjectReference Include="..\..\Domain\WordleSolver.Domain\WordleSolver.Domain.fsproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="FSharpConversion\" />
   </ItemGroup>
 
 </Project>
