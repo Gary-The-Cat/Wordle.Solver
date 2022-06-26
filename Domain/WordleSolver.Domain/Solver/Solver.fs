@@ -34,3 +34,6 @@
                 |> Seq.map Set.ofList
                 |> Seq.reduce Set.intersect
                 |> Set.toList
+
+
+                

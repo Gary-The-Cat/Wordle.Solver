@@ -16,7 +16,7 @@ public partial class SolverInputTabViewModel : DocumentBase
     {
         MakeGuessCommand = ReactiveCommand.Create(MakeGuess);
 
-        Guesses = new List<wordleWord>();
+        Guesses = new List<guess>();
     }
 
     public GuessLetterViewModel GuessLetterOne { get; set; } = new GuessLetterViewModel();

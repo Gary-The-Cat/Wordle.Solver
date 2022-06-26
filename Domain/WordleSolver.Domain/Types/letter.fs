@@ -2,7 +2,7 @@
 
 open System
 
-type letter private (char) =
+type letter public (char) =
     member this.Char = char
 
     static member Create char : Result<letter, string> =

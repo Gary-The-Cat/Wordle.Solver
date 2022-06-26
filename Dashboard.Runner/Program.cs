@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+
+var currentPath = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
 
 const string DashboardLocation =
     @"C:\GitHub\code\Impulse.Dashboard\Impulse.Framework\Impulse.Dashboard\bin\Debug\net6.0-windows\Impulse.Dashboard.exe";

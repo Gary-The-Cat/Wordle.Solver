@@ -1,13 +1,23 @@
-module Tests
-
 open WordleSolver.Domain.Types
 open WordleSolver.Solver;
 open Xunit
+open System
+open FsCheck
+open FsCheck.Xunit
+open WordleSolver.Tests
 
-////[<Fact>]
-////let ``My test`` () =
-////    let myLetter = letter.Create 'a'
-////    myLetter.ResultValue
+
+type LetterTwo =
+    static member letter() = 
+        Arb.generate<char>
+        |> Gen.map letter
+
+[<Arbitrary([| typeof<LetterTwo> |])>]
+module Tests  =
+
+    [<Property>]
+    let ``Create ShouldAlwaysReturnValidInstance WhenProvidedWithLetter`` (myLetter: letter) =
+        printfn ""
 
 ////[<Fact>]
 ////let ``My not-failing test`` () =
