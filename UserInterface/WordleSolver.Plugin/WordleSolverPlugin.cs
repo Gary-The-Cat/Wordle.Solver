@@ -1,3 +1,4 @@
+using Impulse.SharedFramework.Application;
 using Impulse.SharedFramework.Plugin;
 using Impulse.SharedFramework.Services;
 using System.Runtime.Versioning;
@@ -9,6 +10,8 @@ public class WordleSolverPlugin : IPlugin
 {
     private IRibbonService ribbonService;
     private IDocumentService documentService;
+
+    public IDashboardProvider Dashboard { get; set; }
 
     private WordleSolverPlugin(IRibbonService ribbonService, IDocumentService documentService)
     {
